@@ -1,2 +1,37 @@
 <h1>Dashboard#index</h1>
 <p>Find me in app/views/dashboard/index.html.erb</p>
+
+= require jquery.ui.all
+*= require select2
+*= require font-awesome
+*/
+
+@import "mixin_and_var";
+// changing the breakpoint value before importing bootstrap style
+// This change is made for the menu (navbar) to collapse on tablet for better view
+$screen-sm:1024px;
+@import "bootstrap";
+
+@import "general_layout";
+@import "header";
+@import "footer";
+@import "menus";
+@import "pagination";
+@import 'login';
+@import "error";
+
+ <div class="container">
+<h2>test terms</h2>
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<p class="bg-primary">.dfd..</p>
+<p class="bg-success">..sdfas.</p>
+<p class="bg-info">..sdfs.</p>
+<p class="bg-warning">.asdf..</p>
+<p class="bg-danger">.adf..</p>
+<p>test terms</p>
+
+
+<button type="button" class="btn btn-primary">Default</button>
+
+</div>
+<button type="button" class="btn btn-info">Info</button>
